@@ -47,3 +47,13 @@ greet = (name?: string) => {
 
 greet('Ariane');
 greet()
+
+// return type can be implicit, or explicitly declared. Useful in a larger function where you might want to tell other developers what type they should expect to be returned
+
+const minus = (a: number, b: number): number => {
+  return a - b;
+}
+
+let result: number = minus(4, 5);
+
+console.log(result);

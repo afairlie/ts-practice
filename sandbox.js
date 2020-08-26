@@ -33,3 +33,9 @@ greet = function (name) {
 };
 greet('Ariane');
 greet();
+// return type can be implicit, or explicitly declared. Useful in a larger function where you might want to tell other developers what type they should expect to be returned
+var minus = function (a, b) {
+    return a - b;
+};
+var result = minus(4, 5);
+console.log(result);
