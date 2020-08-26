@@ -43,6 +43,7 @@ console.log(add(1, 2))
 let greet: Function;
 greet = (name?: string) => {
   name ? console.log(`hello, ${name}`) : console.log('hello');
+  // returns void type - complete lack of return value, different than undefined
 }
 
 greet('Ariane');

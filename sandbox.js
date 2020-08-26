@@ -30,6 +30,7 @@ console.log(add(1, 2));
 var greet;
 greet = function (name) {
     name ? console.log("hello, " + name) : console.log('hello');
+    // returns void type - complete lack of return value, different than undefined
 };
 greet('Ariane');
 greet();
