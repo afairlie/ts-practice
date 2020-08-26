@@ -24,3 +24,26 @@ mixed.push(4); // valid
 
 // explicit assignment, array
 let notMixed: number[] = [];
+
+// union types - req brackets for array, not for variables
+let arr: (string | number)[] = [];
+arr.push(5);
+arr.push('mixed array using union type explicit declaration');
+
+console.log(arr)
+
+// functions
+
+const add = (a: number, b: number) => {
+  return a + b;
+}
+
+console.log(add(1, 2))
+
+let greet: Function;
+greet = (name?: string) => {
+  name ? console.log(`hello, ${name}`) : console.log('hello');
+}
+
+greet('Ariane');
+greet()

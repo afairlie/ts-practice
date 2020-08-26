@@ -17,3 +17,19 @@ var mixed = ['ariane', 5, 'stu'];
 mixed.push(4); // valid
 // explicit assignment, array
 var notMixed = [];
+// union types - req brackets for array, not for variables
+var arr = [];
+arr.push(5);
+arr.push('mixed array using union type explicit declaration');
+console.log(arr);
+// functions
+var add = function (a, b) {
+    return a + b;
+};
+console.log(add(1, 2));
+var greet;
+greet = function (name) {
+    name ? console.log("hello, " + name) : console.log('hello');
+};
+greet('Ariane');
+greet();
