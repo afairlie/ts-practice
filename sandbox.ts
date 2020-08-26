@@ -58,3 +58,24 @@ const minus = (a: number, b: number): number => {
 let result: number = minus(4, 5);
 
 console.log(result);
+
+// type aliases
+
+type stringOrNum = string | number;
+type objWithName = {name: string, uid: stringOrNum};
+
+//  function signature: defines the structure of a function, ie: what args it takes, what type of data it returns
+
+// this sig says: function takes no args, and returns void:  () => void
+
+let sup: (a: string, b: string) => void;
+
+// valid
+sup = (name: string, greeting: string) => {
+  console.log(`${name} says ${greeting}`)
+}
+
+// invalid (name type can't be number)
+// sup = (name: number, greeting: string) => {
+//   console.log(`${name} says ${greeting}`)
+// }

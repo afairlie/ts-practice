@@ -40,3 +40,14 @@ var minus = function (a, b) {
 };
 var result = minus(4, 5);
 console.log(result);
+//  function signature: defines the structure of a function, ie: what args it takes, what type of data it returns
+// this sig says: function takes no args, and returns void:  () => void
+var sup;
+// valid
+sup = function (name, greeting) {
+    console.log(name + " says " + greeting);
+};
+// invalid (name type can't be number)
+// sup = (name: number, greeting: string) => {
+//   console.log(`${name} says ${greeting}`)
+// }
