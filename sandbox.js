@@ -47,7 +47,15 @@ var sup;
 sup = function (name, greeting) {
     console.log(name + " says " + greeting);
 };
-// invalid (name type can't be number)
-// sup = (name: number, greeting: string) => {
-//   console.log(`${name} says ${greeting}`)
-// }
+var me = {
+    name: 'ariane',
+    age: 28,
+    speak: function (text) {
+        console.log(text);
+    },
+    spend: function (amount) {
+        console.log('I spent', amount);
+        return amount;
+    }
+};
+console.log(me);
